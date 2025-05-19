@@ -5,22 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aradhya Competition Classes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: #f0f4f8;
+      color: #333;
     }
     header {
-      background: #004aad;
+      background: linear-gradient(90deg, #004aad, #0077b6);
       color: white;
-      padding: 1rem 0;
+      padding: 20px 0;
       text-align: center;
     }
     header img {
       height: 80px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 10px 0 5px;
     }
     .container {
       padding: 20px;
@@ -28,30 +33,44 @@
       margin: auto;
     }
     .section {
-      margin-bottom: 30px;
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
     .section h2 {
-      border-bottom: 2px solid #004aad;
-      padding-bottom: 5px;
+      color: #004aad;
+      margin-bottom: 10px;
     }
-    .contact, .specialties, .courses {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    ul {
+      list-style: none;
+      padding: 0;
     }
-    .footer {
-      background: #004aad;
-      color: white;
-      text-align: center;
-      padding: 10px;
+    li::before {
+      content: "\f058";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: #0077b6;
+      margin-right: 10px;
     }
-    img.gallery-photo {
+    .gallery-photo {
       width: 100%;
       max-height: 300px;
       object-fit: cover;
       margin-top: 10px;
       border-radius: 10px;
+    }
+    .contact p i {
+      margin-right: 8px;
+      color: #0077b6;
+    }
+    footer {
+      text-align: center;
+      background: #004aad;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -59,13 +78,13 @@
   <header>
     <img src="logo.jpg" alt="Logo" />
     <h1>Aradhya Competition Classes</h1>
-    <p>Near SBI Bank, Munsiganj Road, Musafirkhana, Amethi, Uttar Pradesh</p>
-    <p>Phone: 9140876861 / 6307956219</p>
+    <p><i class="fas fa-location-dot"></i> Near SBI Bank, Munsiganj Road, Musafirkhana, Amethi, Uttar Pradesh</p>
+    <p><i class="fas fa-phone"></i> 9140876761 / 6307956219</p>
   </header>
 
   <div class="container">
-    <div class="section specialties">
-      <h2>Our Specialties</h2>
+    <div class="section">
+      <h2><i class="fas fa-star"></i> Our Specialties</h2>
       <ul>
         <li>Selected and experienced teachers</li>
         <li>Doubt classes</li>
@@ -75,9 +94,9 @@
       </ul>
     </div>
 
-    <div class="section courses">
-      <h2>Courses We Offer</h2>
-      <p>Contact us for preparation of:</p>
+    <div class="section">
+      <h2><i class="fas fa-book-open"></i> Courses We Offer</h2>
+      <p>We provide coaching for:</p>
       <ul>
         <li>SSC GD</li>
         <li>Agniveer</li>
@@ -88,21 +107,21 @@
       </ul>
     </div>
 
-    <div class="section gallery">
-      <h2>Gallery</h2>
-      <img src="class1.jpg" alt="Class Photo" class="gallery-photo" />
-      <img src="class2.jpg" alt="Class Photo" class="gallery-photo" />
+    <div class="section">
+      <h2><i class="fas fa-image"></i> Gallery</h2>
+      <img src="class1.jpg" alt="Classroom 1" class="gallery-photo" />
+      <img src="class2.jpg" alt="Classroom 2" class="gallery-photo" />
     </div>
 
     <div class="section contact">
-      <h2>Contact Us</h2>
-      <p>Phone: 9140876861 / 6307956219</p>
-      <p>Visit us near SBI Bank, Munsiganj Road, Musafirkhana, Amethi (UP)</p>
-      <p><a href="https://wa.me/919140876861" target="_blank">Message on WhatsApp</a></p>
+      <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+      <p><i class="fas fa-phone"></i> 9140876761 / 6307956219</p>
+      <p><i class="fas fa-map-marker-alt"></i> Near SBI Bank, Munsiganj Road, Musafirkhana, Amethi (UP)</p>
+      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919140876761" target="_blank">Message us on WhatsApp</a></p>
     </div>
   </div>
 
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 Aradhya Competition Classes. All rights reserved.</p>
   </footer>
 </body>
